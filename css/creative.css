@@ -47,6 +47,10 @@ p {
   color: white;
   background-color: #222222 !important; }
 
+.bg-contact {
+  background-color: #ffffff !important;
+}
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
 
