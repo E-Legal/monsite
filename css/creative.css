@@ -40,6 +40,14 @@ p {
   line-height: 1.5;
   margin-bottom: 20px; }
 
+.aws-img {
+  border-radius: 70px;
+}
+
+.competence-row {
+  padding: 20px;
+}
+
 .bg-primary {
   background-color: #353b48 !important; }
 
