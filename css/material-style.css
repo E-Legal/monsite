@@ -462,7 +462,7 @@ a:hover { opacity: 0.85; }
    ============================================ */
 @media (max-width: 1024px) {
     .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-    .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .skills-grid { grid-template-columns: repeat(2, 1fr); justify-content: center; }
 }
 
 @media (max-width: 768px) {
