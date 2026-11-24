@@ -375,10 +375,7 @@ a:hover { opacity: 0.85; }
     border-radius: 16px;
 }
 .skill-item img { width: 32px; height: 32px; object-fit: contain; }
-.skill-item img[src*="claude"],
-.skill-item img[src*="openai"] {
-    filter: brightness(1.8) contrast(1.2);
-}
+.skill-item svg { width: 32px; height: 32px; flex-shrink: 0; }
 .skill-item span {
     font-size: 0.9375rem; color: var(--md-on-surface); font-weight: 500;
 }
