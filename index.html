@@ -1,266 +1,328 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 
-  <head>
-
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Portfolio d'Eliott Legal - Développeur Full-Stack chez Poolker">
+    <meta name="author" content="Eliott Legal">
 
-    <title>Eliott-Legal</title>
+    <title>Eliott Legal - Développeur Full-Stack</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Flex:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Custom MD3 Styles -->
+    <link rel="stylesheet" type="text/css" href="css/material-style.css">
+</head>
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link href="css/creative.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+<body id="page-top">
 
-  </head>
+    <!-- Top App Bar -->
+    <nav class="top-app-bar" id="mainNav">
+        <div class="container nav-container">
+            <a href="#page-top" class="nav-brand">
+                <span class="material-symbols-outlined">code</span>
+                Eliott<span class="brand-accent">.dev</span>
+            </a>
 
-  <body id="page-top">
+            <ul class="nav-links">
+                <li><a class="nav-link js-scroll-trigger" href="#about"><span class="material-symbols-outlined nav-icon">person</span>A propos</a></li>
+                <li><a class="nav-link js-scroll-trigger" href="#portfolio"><span class="material-symbols-outlined nav-icon">folder</span>Portfolio</a></li>
+                <li><a class="nav-link js-scroll-trigger" href="#skill"><span class="material-symbols-outlined nav-icon">stars</span>Compétences</a></li>
+            </ul>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">A propos de moi</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skill">Compétences</a>
-            </li>
-          </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Basculer le thème">
+                    <span class="material-symbols-outlined icon-light">light_mode</span>
+                    <span class="material-symbols-outlined icon-dark">dark_mode</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
         </div>
-      </div>
     </nav>
 
-    <header class="masthead">
-      <div class="header-content">
-        <div class="header-content-inner">
-          <h1 id="homeHeading">Eliott Legal</h1>
-          <hr>
-          <p>Étudiant Epitech-Marseille Promotion 2021</p>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="js-scroll-trigger"><span class="material-symbols-outlined">person</span>A propos de moi</a></li>
+            <li><a href="#portfolio" class="js-scroll-trigger"><span class="material-symbols-outlined">folder</span>Portfolio</a></li>
+            <li><a href="#skill" class="js-scroll-trigger"><span class="material-symbols-outlined">stars</span>Compétences</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="homeHeading">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
         </div>
-      </div>
+        <div class="hero-content container">
+            <span class="hero-chip"><span class="material-symbols-outlined" style="font-size:18px !important;">check_circle</span> Disponible pour de nouveaux projets</span>
+            <h1 class="hero-title">Bonjour, je suis<br><span class="gradient-text">Eliott Legal</span></h1>
+            <p class="hero-subtitle">Développeur Full-Stack chez <strong>Poolker</strong>, passionné par Laravel, AWS et le développement web moderne.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary-filled" href="img/CV.jpg" target="_blank"><span class="material-symbols-outlined">download</span>Télécharger mon CV</a>
+                <a class="btn btn-tonal js-scroll-trigger" href="#portfolio"><span class="material-symbols-outlined">folder_open</span>Voir mes projets</a>
+            </div>
+        </div>
     </header>
 
-
     <!-- A propos -->
-    <section class="bg-primary" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <img class="img-fuild profil-pic" style="width: 40%" src="img/0.jpg">
-          </div>
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">A propos de moi !</h2>
-            <hr class="light">
-            <p class="text-faded">Étudiant en 5e année à Epitech Marseille une école qui me permet de transformer ma passion pour l'informatique en un métier au travers de plusieurs projets et cela pendant 5 ans. Grâce au Web et au développement Mobile j'ai trouvé ma voie dans le milieu de la programmation qui est devenu plus qu'une passion pour moi.<br>
-            <a class="btn btn-default btn-xl js-scroll-trigger" href="img/CV.jpg" target="_blank" style="margin-top: 30px;">Mon CV</a>
-          </div>
+    <section class="about-section" id="about">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 48px;">
+                <span class="section-chip"><span class="material-symbols-outlined" style="font-size:16px !important;">person_outline</span> À propos</span>
+            </div>
+            <div class="about-card">
+                <div class="about-avatar-wrapper">
+                    <img class="about-avatar profil-pic" src="img/0.jpg" alt="Eliott Legal">
+                    <div class="avatar-ring"></div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">A propos de moi !</h2>
+                    <p class="about-text">
+                        Diplômé d'Epitech Marseille (Promotion 2021), je suis désormais <strong>développeur Full-Stack chez Poolker</strong>. 
+                        Je travaille principalement avec <strong>Laravel</strong> pour le backend et <strong>AWS</strong> pour l'infrastructure cloud.
+                    </p>
+                    <p class="about-text">
+                        Pendant mes 5 années à Epitech, j'ai développé une passion pour le Web et le développement Mobile à travers de nombreux projets. 
+                        Le milieu de la programmation est devenu bien plus qu'une passion pour moi.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="material-symbols-outlined stat-icon">school</span>
+                            <span class="stat-value">5 ans</span>
+                            <span class="stat-label">Études Epitech</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="material-symbols-outlined stat-icon">work</span>
+                            <span class="stat-value">Poolker</span>
+                            <span class="stat-label">Développeur Full-Stack</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="material-symbols-outlined stat-icon">code</span>
+                            <span class="stat-value">Laravel + AWS</span>
+                            <span class="stat-label">Technologies principales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Portfolio -->
-    <section class="p-0" id="portfolio" style="background: #282828">
-      <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Ubeat
-                  </div>
-                  <div class="project-name">
-                    Création d'un site web semblable à l'application Spotify (Langague VueJS)
-                  </div>
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 16px;">
+                <span class="section-chip"><span class="material-symbols-outlined" style="font-size:16px !important;">folder</span> Portfolio</span>
+            </div>
+            <h2 class="section-title section-title--center">Mes projets</h2>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <div class="card-media">
+                        <img src="img/portfolio/thumbnails/1.jpg" alt="Ubeat">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">VueJS</span>
+                        <h3 class="card-title">Ubeat</h3>
+                        <p class="card-desc">Création d'un site web semblable à l'application Spotify.</p>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Membre du Hub Epitech Marseille
-                  </div>
-                  <div class="project-name">
-                    Lors de ma 2e année d'études j'ai intégré l'équipe du Hub d'Epitech Marseille qui a pour but de développer l'innovation au sein de l'école et des étudiants extérieurs
-                  </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <div class="card-media">
+                        <img src="img/portfolio/thumbnails/2.jpg" alt="Hub Epitech Marseille">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Innovation</span>
+                        <h3 class="card-title">Hub Epitech Marseille</h3>
+                        <p class="card-desc">Intégration de l'équipe du Hub pour développer l'innovation au sein de l'école.</p>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Ugram
-                  </div>
-                  <div class="project-name">
-                    Création d'un site web semblable à l'application Instagram (Langague React)
-                  </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <div class="card-media">
+                        <img src="img/portfolio/thumbnails/3.jpg" alt="Ugram">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">React</span>
+                        <h3 class="card-title">Ugram</h3>
+                        <p class="card-desc">Création d'un site web semblable à l'application Instagram.</p>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Odalys
-                  </div>
-                  <div class="project-name">
-                    En tant que assistant webmaster j'ai eu la charge de refaire certains site de la société Odalys
-                  </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card">
+                    <div class="card-media">
+                        <img src="img/portfolio/thumbnails/4.jpg" alt="Odalys">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Webmastering</span>
+                        <h3 class="card-title">Odalys</h3>
+                        <p class="card-desc">Refonte de certains sites du groupe Odalys en tant qu'assistant webmaster.</p>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    BomberTek
-                  </div>
-                  <div class="project-name">
-                    Projet Epitech consistant au développement d'un Bomberman en 3D. Ce jeu a entièrement été développé en C++ avec les librairies Irrlicht et Irrklang.
-                  </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-card">
+                    <div class="card-media">
+                        <img src="img/portfolio/thumbnails/5.jpg" alt="BomberTek">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">C++ / Irrlicht</span>
+                        <h3 class="card-title">BomberTek</h3>
+                        <p class="card-desc">Développement d'un Bomberman en 3D avec les librairies Irrlicht et Irrklang.</p>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Zappy
-                  </div>
-                  <div class="project-name">
-                    Projet Epitech consistant au développement d'un jeu en réseau. Plusieurs équipes doivent s'affronter sur un terrain contenant des ressources.
-                  </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-card">
+                    <div class="card-media">
+                        <img src="img/portfolio/thumbnails/6.jpg" alt="Zappy">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-tag">Réseau / C</span>
+                        <h3 class="card-title">Zappy</h3>
+                        <p class="card-desc">Développement d'un jeu en réseau multi-équipes avec gestion de ressources.</p>
+                    </div>
                 </div>
-              </div>
-            </a>
-          </div>
-        </section>
+            </div>
+        </div>
+    </section>
 
     <!-- Compétences -->
-    <section class="bg-primary" id="skill">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Mes compétences</h2>
-            <hr class="light">
-          </div>
+    <section class="skills-section" id="skill">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 16px;">
+                <span class="section-chip"><span class="material-symbols-outlined" style="font-size:16px !important;">stars</span> Compétences</span>
+            </div>
+            <h2 class="section-title section-title--center">Mes compétences</h2>
+
+            <!-- Skill Categories -->
+            <div class="skills-grid">
+                <!-- Backend -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <span class="material-symbols-outlined category-icon">dns</span>
+                        <h3 class="category-title">Backend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="img/icon/HTML.png" alt="PHP"><span>Laravel / PHP</span></div>
+                        <div class="skill-item"><img src="img/icon/Nodejs.png" alt="Node.js"><span>Node.js</span></div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <span class="material-symbols-outlined category-icon">web</span>
+                        <h3 class="category-title">Frontend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="img/icon/HTML.png" alt="HTML"><span>HTML / CSS</span></div>
+                        <div class="skill-item"><img src="img/icon/React.png" alt="React"><span>React</span></div>
+                        <div class="skill-item"><img src="img/icon/VueJs.png" alt="Vue.js"><span>Vue.js</span></div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <span class="material-symbols-outlined category-icon">cloud</span>
+                        <h3 class="category-title">Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="img/icon/Aws.png" alt="AWS"><span>AWS</span></div>
+                        <div class="skill-item"><img src="img/icon/Docker.png" alt="Docker"><span>Docker</span></div>
+                    </div>
+                </div>
+
+                <!-- Design & Mobile -->
+                <div class="skill-category-card">
+                    <div class="category-header">
+                        <span class="material-symbols-outlined category-icon">palette</span>
+                        <h3 class="category-title">Design & Mobile</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item"><img src="img/icon/Photoshop.png" alt="Photoshop"><span>Photoshop</span></div>
+                        <div class="skill-item"><img src="img/icon/Android.png" alt="Android"><span>Android</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Progress Bars -->
+            <div class="skills-bars">
+                <div class="skill-bar-item">
+                    <div class="bar-header"><span>Laravel / PHP</span><span>90%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="--width: 90%;"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="bar-header"><span>AWS</span><span>85%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="--width: 85%;"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="bar-header"><span>React</span><span>80%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="--width: 80%;"></div></div>
+                </div>
+                <div class="skill-bar-item">
+                    <div class="bar-header"><span>Docker</span><span>75%</span></div>
+                    <div class="bar-track"><div class="bar-fill" style="--width: 75%;"></div></div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row competence-row">
-          <div class="col-sm" align="center">
-            <img src="img/icon/HTML.png">
-          </div>
-          <div class="col-sm" align="center">
-            <img src="img/icon/CSS.png">
-          </div>
-          <div class="col-sm" align="center">
-            <img src="img/icon/Nodejs.png">
-          </div>
-        </div>
-        <div class="row competence-row">
-          <div class="col-sm" align="center">
-            <img src="img/icon/React.png">
-          </div>
-          <div class="col-sm" align="center">
-            <img src="img/icon/VueJs.png">
-          </div>
-          <div class="col-sm" align="center">
-            <img src="img/icon/Android.png">
-          </div>
-        </div>
-        <div class="row competence-row">
-          <div class="col-sm" align="center">
-            <img src="img/icon/Photoshop.png">
-          </div>
-          <div class="col-sm" align="center">
-            <img class="aws-img" src="img/icon/Aws.png">
-          </div>
-          <div class="col-sm" align="center">
-            <img src="img/icon/Docker.png">
-          </div>
-        </div>
-      </div>
     </section>
 
+    <!-- Réseaux sociaux -->
+    <section class="social-section">
+        <div class="container">
+            <div style="text-align:center; margin-bottom: 16px;">
+                <span class="section-chip"><span class="material-symbols-outlined" style="font-size:16px !important;">share</span> Réseaux</span>
+            </div>
+            <h2 class="section-title section-title--center">Mes réseaux</h2>
+            <p class="social-subtitle">Retrouvez-moi sur les plateformes suivantes</p>
 
-    <!-- Github -->
-    <section class="bg-primary">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading text-white">Mes réseaux</h2>
-            <hr class="light">
-          </div>
+            <div class="social-links">
+                <a href="https://github.com/E-Legal" target="_blank" class="social-card">
+                    <div class="social-icon-circle"><img src="img/icon/Github.png" alt="GitHub"></div>
+                    GitHub
+                    <span class="material-symbols-outlined social-arrow">arrow_forward</span>
+                </a>
+                <a href="https://www.linkedin.com/in/eliott-legal-593a5b135/" target="_blank" class="social-card">
+                    <div class="social-icon-circle"><img src="img/icon/Linkedin.png" alt="LinkedIn"></div>
+                    LinkedIn
+                    <span class="material-symbols-outlined social-arrow">arrow_forward</span>
+                </a>
+            </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row competence-row">
-          <div class="col-md" align="center">
-            <a href="https://github.com/E-Legal" target="_blank"><img src="img/icon/Github.png" /></a>
-            <p>Github</p>
-          </div>
-          <div class="col-md" align="center">
-            <a href="https://www.linkedin.com/in/eliott-legal-593a5b135/" target="_blank"><img src="img/icon/Linkedin.png"/></a>
-            <p>Linkedin</p>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Eliott Legal — Tous droits réservés.</p>
+        </div>
+    </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Scroll to Top FAB -->
+    <button class="fab-scroll-top" id="scrollTopBtn" aria-label="Retour en haut">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/material-scripts.js"></script>
 
-  </body>
-
+</body>
 </html>

@@ -1,0 +1,7 @@
+.idea/
+*.bak
+*.log
+write_files.py
+dbg.log
+node_modules/
+.DS_Store
